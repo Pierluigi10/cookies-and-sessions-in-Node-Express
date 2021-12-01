@@ -14,3 +14,9 @@ SESSION_SECRET = 1234sdfsidf23434
 
 - `npm start`
 - test in a browser or in Postdam by going to the endpoints
+
+
+## Source:  [onespace](https://onespace.netlify.app/)
+
+- [How to create sessions in Node/Express](https://onespace.netlify.app/howtos?id=445)
+
