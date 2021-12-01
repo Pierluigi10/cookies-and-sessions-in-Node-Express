@@ -1,6 +1,9 @@
 import express from "express";
 import session from "express-session";
 import cookieParser from "cookie-parser";
+import dotenv from 'dotenv';
+ 
+dotenv.config();
 
 const app = express();
 const port = 5002;
@@ -10,7 +13,7 @@ app.use(
   session({
     resave: true,
     saveUninitialized: true,
-    secret: "sse31493147cret",
+    secret: process.env.SESSION_SECRET,
   })
 );
 
