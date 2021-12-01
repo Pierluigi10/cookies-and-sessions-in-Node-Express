@@ -10,9 +10,24 @@ app.use(
   session({
     resave: true,
     saveUninitialized: true,
-    secret: "secret",
+    secret: "sse31493147cret",
   })
 );
+
+const users = [
+    {
+        username: "ja",
+        firstName: "James",
+        lastName: "Anderson",
+        email: "ja@mail.com"
+    },
+    {
+        username: "ac",
+        firstName: "Ashley",
+        lastName: "Cartwright",
+        email: "ac@mail.com"
+    }
+];
 
 app.get("/", (req, res) => {
   res.send("this is a test!");
